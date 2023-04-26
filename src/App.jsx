@@ -6,19 +6,16 @@ const App = () => {
 
   return (
     <div className='bg-primary sm:px-[121px] px-[24px] text-white overflow'>
-      {/* Hello */}
       
       <Router>
-      
-      <Routes>
-        <Route path='/' element={<MainLayout />} >
-          <Route index element={<Home />} />
-          <Route path='/mentorship' element={<Mentorship/>}  />
-          <Route path="/snippet" element={<CodeSnippetPage/>} />
-          <Route path="/portfolio" element={<Portfolio/>} /> 
-
-        </Route>
-      </Routes>
+        <Routes>
+          <Route path='/' element={<MainLayout />} >
+            <Route index element={<Home />} />
+            <Route path='/mentorship' element={<Mentorship/>}  />
+            <Route path="/snippet" element={<CodeSnippetPage/>} />
+            <Route path="/portfolio" element={<Portfolio/>} /> 
+          </Route>
+        </Routes>
       </Router>
 
     </div>
